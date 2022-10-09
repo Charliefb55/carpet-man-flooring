@@ -1,3 +1,11 @@
+html {
+    font-size: 16px;
+}
+
+body {
+    margin: 0;
+}
+
 .about {
     display: flex;
     flex-wrap: wrap;
@@ -33,7 +41,7 @@
 }
 
 .gallery {
-    --size: 275px; /* control the size */
+    --size: 200px; /* control the size */
     --gap: 10px;  /* control the gap */
     
     display: grid;
