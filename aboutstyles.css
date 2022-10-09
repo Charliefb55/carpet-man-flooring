@@ -1,0 +1,105 @@
+.about {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.title {
+    color: rgb(102, 92, 92);
+    font-size: 2.5rem;
+    padding-top: 25px;
+}
+
+.bizinfo{
+    font-size: 1.75rem;
+    padding-left: 75px;
+    padding-right: 75px;
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
+
+.job-title {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
+
+.jobs {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.gallery {
+    --size: 275px; /* control the size */
+    --gap: 10px;  /* control the gap */
+    
+    display: grid;
+    gap: var(--gap);
+    grid-template-columns: repeat(2,auto);
+    position: relative;
+    max-width: fit-content;
+  }
+  .gallery > img {
+    width: var(--size);
+    aspect-ratio: 1;
+    object-fit: cover;
+    -webkit-mask: conic-gradient(from var(--_a),#0000 90deg,#000 0);
+            mask: conic-gradient(from var(--_a),#0000 90deg,#000 0);
+  }
+  .gallery > img:nth-child(1) {--_a: 90deg}
+  .gallery > img:nth-child(2) {--_a:180deg}
+  .gallery > img:nth-child(3) {--_a:  0deg}
+  .gallery > img:nth-child(4) {--_a:-90deg}
+  .gallery > img:nth-child(5) {
+    position: absolute;
+    inset: calc(50% - .5*var(--size));
+    clip-path: inset(calc(var(--gap)/4));
+  }
+
+body {
+    display: grid;
+    margin: 0;
+    place-content: center;
+}
+
+.container{
+    padding: 20px;
+    box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+    margin-bottom: 30px;
+}
+
+.footer {
+    background-color: rgba(94, 94, 94, 0.555);
+    margin-bottom: -10px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    overflow: hidden;
+    justify-content: center;
+    align-items: center;
+}
+
+hr {
+    height: 10px;
+    background-color: black;
+    border-width: 0;
+    width: 50%;
+}
+
+.info {
+    padding-top: 15px;
+}
+
+.hours {
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.footer-txt {
+    color: aliceblue;
+    padding-top: 25px;
+    padding-bottom: 25px;
+}

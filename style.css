@@ -1,0 +1,119 @@
+html {
+    font-size: 16px;
+}
+
+body {
+    margin: 0;
+}
+
+.pageTop {
+    background-image: url(assets/bgTop.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    color: aliceblue;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.navbar-brand {
+    font-weight: bold;
+    font-size: 2.5rem;
+    text-decoration: solid;
+}
+
+.navbar-brand:hover {
+    background-color: rgba(244, 246, 247, 0.7);
+    transition: 0.5s;
+}
+
+.nav-link {
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+.nav-link:hover {
+    background-color: rgba(244, 246, 247, 0.7);
+    transition: 0.5s;
+}
+
+.image-txt {
+    padding-top: 925px;
+    padding-bottom: 175px;
+}
+
+.services {
+    text-align: center;
+    padding: 25px;
+    font-size: 2.75rem;
+    text-decoration: underline;
+}
+
+.card {
+    border: none;
+    padding: 25px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    align-items: center;
+    transform: translateY(32px);
+    opacity: 0;
+    transition: 800ms ease-out;
+}
+
+.card.faded-in {
+    transform: translateY(0);
+    opacity: 1;
+}
+
+.card-title {
+    text-decoration: underline;
+}
+
+.card-body {
+    box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+    background-color: rgba(182, 181, 181, 0.15);
+}
+
+p {
+    font-size: 1.5rem;
+}
+
+.container{
+    padding: 20px;
+    box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+    margin-bottom: 30px;
+}
+
+.footer {
+    background-color: rgba(94, 94, 94, 0.555);
+    margin-bottom: -10px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    overflow: hidden;
+    justify-content: center;
+    align-items: center;
+}
+
+hr {
+    height: 10px;
+    background-color: black;
+    border-width: 0;
+    width: 50%;
+}
+
+.info {
+    padding-top: 15px;
+}
+
+.hours {
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.footer-txt {
+    color: aliceblue;
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
